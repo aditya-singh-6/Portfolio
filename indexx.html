@@ -1,0 +1,504 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> -Portfolio Website</title>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css'>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind CSS aur Font Awesome link -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <!-- Include Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+                publicKey: "ZqJpUoeLdNWKIW1v9",
+            });
+        })();
+    </script>
+
+</head>
+
+<body>
+    <main>
+        <!-- Smooth Scroll and Slide-in Menu Script -->
+
+        <nav class="bg-gray-800 bg-opacity-100 fixed w-full z-50 shadow-lg px-6 py-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-yellow-500">Portfolio</a>
+                <button id="navToggle" class="text-white text-2xl lg:hidden focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+                <ul id="navMenu" class="fixed top-0 right-0 h-full w-3/4 max-w-xs p-6 transform translate-x-full transition-transform duration-300 lg:relative lg:translate-x-0 lg:flex lg:space-x-6 lg:bg-transparent lg:p-0 backdrop-blur-lg lg:backdrop-blur-none">
+                    <button id="closeNav" class="text-white text-2xl mb-4 lg:hidden">
+                    <i class="fas fa-times"></i>
+                </button>
+                    <li><a href="#home" class="block py-2 text-white hover:bg-yellow-500 hover:text-gray-900 transition-all duration-300 rounded-lg">Home</a></li>
+                    <li><a href="#about" class="block py-2 text-white hover:bg-yellow-500 hover:text-gray-900 transition-all duration-300 rounded-lg">About</a></li>
+                    <li><a href="#services" class="block py-2 text-white hover:bg-yellow-500 hover:text-gray-900 transition-all duration-300 rounded-lg">services</a></li>
+                    <li><a href="#projects" class="block py-2 text-white hover:bg-yellow-500 hover:text-gray-900 transition-all duration-300 rounded-lg">project</a></li>
+                    <li><a href="#contact" class="block py-2 text-white hover:bg-yellow-500 hover:text-gray-900 transition-all duration-300 rounded-lg">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--main -->
+        <main>
+
+            <!--picture -->
+            <div id="home" class=" relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 95vh">
+                <div class="absolute top-0 w-full h-full bg-top bg-cover" style="
+            background-image: url('IMG-20240512-WA0000.png');
+          ">
+                    <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+                </div>
+                <div class="container relative mx-auto" data-aos="fade-in">
+                    <div class="items-center flex flex-wrap">
+                        <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+                            <div>
+                                <h1 class="text-white font-semibold text-5xl">
+                                    FRONT-END DEVELOPER & <span class="text-yellow-500">DESIGNER</span>
+                                </h1>
+                                <p class="mt-4 text-lg text-gray-300">
+                                    <!-- My name is aditya singh and I have done internship 1 month!  -->
+                                    i'm Aditya and i am Dedicated web Developer I have recently completed a 1-month internship at internship Studio, a passion for creating i . with a strong foundation in programming and a knack for problem-solving , i specialize in Front-End project that
+                                    drive efficiency and user satisfaction.
+                                </p>
+                                <a href=" " class="bg-transparent hover:text-white hover:border-gray-600 text-yellow-600 font-semibold p-3 border border-yellow-600 hover:border-trasparent rounded inline-block mt-5 cursor-pointer">
+                            MY RESUME
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden" style="height: 70px; transform: translateZ(0px)">
+                    <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+                </div>
+
+            </div>
+
+
+            <!--About Section -->
+
+            <section id="about" class="relative py-20 pb-44 bg-black text-white">
+                <div class="container mx-auto px-4 mt-10">
+                    <div class="flex flex-col lg:flex-row items-center lg:justify-between">
+                        <!-- Image Section -->
+                        <div class="w-full lg:w-4/12 px-4 mb-8 lg:mb-0 text-center lg:text-left" data-aos="fade-right">
+                            <img alt="Profile Image" class="max-w-full rounded-full shadow-lg mx-auto lg:mx-0" src="Picsart_24-04-08_12-50-35-412.png" />
+
+                            <!-- Social Icons under the image on the left side -->
+                            <ul class="about-social flex space-x-4 mt-4 justify-center lg:justify-start">
+                                <li><a href="https://www.instagram.com/aditya_singh_rajput10?igsh=bDR0M3Y4bzg2bjJm" class="border border-gray-500 rounded-full p-2 flex items-center justify-center w-10 h-10 text-white hover:text-pink-500"><i
+                                        class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://github.com/aditya-singh-6" class="border border-gray-500 rounded-full p-2 flex items-center justify-center w-10 h-10 text-white hover:text-gray-800"><i
+                                        class="fab fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/aditya-kumar-a99030250" class="border border-gray-500 rounded-full p-2 flex items-center justify-center w-10 h-10 text-white hover:text-blue-500"><i
+                                        class="fab fa-linkedin"></i></a></li>
+                                <li><a href="https://youtube.com/@code_bhakt?si=C-frmxxa71iVf779" class="border border-gray-500 rounded-full p-2 flex items-center justify-center w-10 h-10 text-white hover:text-red-500"><i
+                                        class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Skills Section -->
+                        <section id="skills" class="text-white lg:mb-0 mb-8 lg:w-4/12 w-full" data-aos="fade-up">
+                            <div class="container mx-auto px-4 max-w-full">
+                                <h1 class="text-3xl font-semibold mb-10 text-center">My <span class="text-yellow-500">Skills</span></h1>
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
+                                    <!-- Skill Items -->
+                                    <!-- HTML Skill -->
+                                    <!-- 1 -->
+                                    <div class="flex flex-col items-center space-y-2">
+                                        <div class="relative flex items-center justify-center h-[60px] w-[60px] rounded-full border-2 border-gray-700">
+                                            <div class="absolute top-0 left-0 w-full h-full rounded-full border-2 border-yellow-500" style="clip-path: inset(0% 0% 25% 0%); animation: progress75 1.5s linear forwards;">
+                                            </div>
+                                            <span class="text-lg font-bold text-yellow-500">80%</span>
+                                        </div>
+                                        <h3 class="text-base font-semibold">HTML</h3>
+                                        <p class="text-gray-400 text-xs">Skill level description.</p>
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="flex flex-col items-center space-y-2">
+                                        <div class="relative flex items-center justify-center h-[60px] w-[60px] rounded-full border-2 border-gray-700">
+                                            <div class="absolute top-0 left-0 w-full h-full rounded-full border-2 border-yellow-500" style="clip-path: inset(0% 0% 25% 0%); animation: progress75 1.5s linear forwards;">
+                                            </div>
+                                            <span class="text-lg font-bold text-yellow-500">80%</span>
+                                        </div>
+                                        <h3 class="text-base font-semibold">HTML</h3>
+                                        <p class="text-gray-400 text-xs">Skill level description.</p>
+                                    </div>
+                                    <!-- 3 -->
+                                    <div class="flex flex-col items-center space-y-2">
+                                        <div class="relative flex items-center justify-center h-[60px] w-[60px] rounded-full border-2 border-gray-700">
+                                            <div class="absolute top-0 left-0 w-full h-full rounded-full border-2 border-yellow-500" style="clip-path: inset(0% 0% 25% 0%); animation: progress75 1.5s linear forwards;">
+                                            </div>
+                                            <span class="text-lg font-bold text-yellow-500">80%</span>
+                                        </div>
+                                        <h3 class="text-base font-semibold">CSS</h3>
+                                        <p class="text-gray-400 text-xs">Skill level description.</p>
+                                    </div>
+                                    <!-- 4 -->
+                                    <div class="flex flex-col items-center space-y-2">
+                                        <div class="relative flex items-center justify-center h-[60px] w-[60px] rounded-full border-2 border-gray-700">
+                                            <div class="absolute top-0 left-0 w-full h-full rounded-full border-2 border-yellow-500" style="clip-path: inset(0% 0% 25% 0%); animation: progress75 1.5s linear forwards;">
+                                            </div>
+                                            <span class="text-lg font-bold text-yellow-500">80%</span>
+                                        </div>
+                                        <h3 class="text-base font-semibold">JavaScript</h3>
+                                        <p class="text-gray-400 text-xs">Skill level description.</p>
+                                    </div>
+                                    <!-- 5 -->
+                                    <div class="flex flex-col items-center space-y-2">
+                                        <div class="relative flex items-center justify-center h-[60px] w-[60px] rounded-full border-2 border-gray-700">
+                                            <div class="absolute top-0 left-0 w-full h-full rounded-full border-2 border-yellow-500" style="clip-path: inset(0% 0% 25% 0%); animation: progress75 1.5s linear forwards;">
+                                            </div>
+                                            <span class="text-lg font-bold text-yellow-500">80%</span>
+                                        </div>
+                                        <h3 class="text-base font-semibold">React</h3>
+                                        <p class="text-gray-400 text-xs">Skill level description.</p>
+                                    </div>
+                                    <!-- 6 -->
+                                    <div class="flex flex-col items-center space-y-2">
+                                        <div class="relative flex items-center justify-center h-[60px] w-[60px] rounded-full border-2 border-gray-700">
+                                            <div class="absolute top-0 left-0 w-full h-full rounded-full border-2 border-yellow-500" style="clip-path: inset(0% 0% 25% 0%); animation: progress75 1.5s linear forwards;">
+                                            </div>
+                                            <span class="text-lg font-bold text-yellow-500">80%</span>
+                                        </div>
+                                        <h3 class="text-base font-semibold">Design</h3>
+                                        <p class="text-gray-400 text-xs">Skill level description.</p>
+                                    </div>
+                                    <!-- Additional skills -->
+                                    <!-- Repeat similar structure for each skill -->
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- About Section -->
+                        <div class="w-full lg:w-5/12 px-4" data-aos="fade-left">
+                            <div class="text-center lg:text-left">
+                                <h1 class="text-4xl font-semibold font-sans">About <span class="text-yellow-600">Us</span>
+                                </h1>
+                                <h3 class="text-2xl uppercase mt-2">FRONT-END DEVELOPER <span class="text-yellow-500">AND
+                                    DESIGNER</span></h3>
+                                <p class="mt-4 text-lg leading-relaxed">
+                                    Hi, I'm Aditya Singh, a Front-End Developer & Designer with a strong background in web technologies. Through my BCA degree and various projects, I've gained hands-on experience in creating responsive and dynamic interfaces. I'm dedicated to building intuitive,
+                                    aesthetically pleasing websites with a focus on user experience.
+                                </p>
+                                <ul class="list-none mt-6 space-y-4">
+                                    <li class="flex items-center justify-center lg:justify-start">
+                                        <span class="font-semibold inline-block py-3 mr-3 text-yellow-500"><i
+                                            class="fas fa-users fa-2x"></i></span>
+                                        <h4 class="text-xl">1 month internship in Web Development and Design</h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <style>
+                /* <!-- CSS for animations and circular progress --> */
+                /* Keyframes for each skill's percentage */
+                
+                @keyframes progress50 {
+                    from {
+                        clip-path: inset(0% 0% 100% 0%);
+                    }
+                    to {
+                        clip-path: inset(0% 0% 50% 0%);
+                    }
+                }
+                
+                @keyframes progress75 {
+                    from {
+                        clip-path: inset(0% 0% 100% 0%);
+                    }
+                    to {
+                        clip-path: inset(0% 0% 25% 0%);
+                    }
+                }
+                
+                @keyframes progress38 {
+                    from {
+                        clip-path: inset(0% 0% 100% 0%);
+                    }
+                    to {
+                        clip-path: inset(0% 0% 62% 0%);
+                    }
+                }
+                
+                @keyframes progress63 {
+                    from {
+                        clip-path: inset(0% 0% 100% 0%);
+                    }
+                    to {
+                        clip-path: inset(0% 0% 37% 0%);
+                    }
+                }
+            </style>
+
+
+
+
+            <!-- .................................... -->
+            <!-- SERVICES SECTION -->
+
+            <section id="services" class="bg-white py-12">
+                <div class="container mx-auto">
+                    <div class="text-center mb-8">
+                        <h1 class="text-4xl font-semibold">
+                            My <span class="text-yellow-600">Services</span>
+                        </h1>
+                    </div>
+
+                    <div class="flex flex-wrap justify-center">
+                        <!-- Row 1 -->
+                        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 px-4 py-4 border-b border-gray-300 sm:border-r sm:last:border-r-0">
+                            <div class="text-center p-5 transition-transform ease-out duration-300 transform hover:-translate-y-2">
+                                <i class="fas fa-code text-gray-500 text-4xl mb-4"></i>
+                                <h3 class="text-xl font-semibold">Front-End Development</h3>
+                                <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet ligula quis lectus rhoncus porttitor ac ut quam.</p>
+                            </div>
+                        </div>
+
+                        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 px-4 py-4 border-b border-gray-300 sm:border-r sm:last:border-r-0">
+                            <div class="text-center p-5 transition-transform ease-out duration-300 transform hover:-translate-y-2">
+                                <i class="fas fa-laptop text-gray-500 text-4xl mb-4"></i>
+                                <h3 class="text-xl font-semibold">Web Design</h3>
+                                <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet ligula quis lectus rhoncus porttitor ac ut quam.</p>
+                            </div>
+                        </div>
+
+                        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 px-4 py-4 border-b border-gray-300">
+                            <div class="text-center p-5 transition-transform ease-out duration-300 transform hover:-translate-y-2">
+                                <i class="fas fa-mobile-alt text-gray-500 text-4xl mb-4"></i>
+                                <h3 class="text-xl font-semibold">Fully Responsive</h3>
+                                <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet ligula quis lectus rhoncus porttitor ac ut quam.</p>
+                            </div>
+                        </div>
+
+                        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 px-4 py-4 border-b border-gray-300 sm:border-r sm:last:border-r-0">
+                            <div class="text-center p-5 transition-transform ease-out duration-300 transform hover:-translate-y-2">
+                                <i class="far fa-file-alt text-gray-500 text-4xl mb-4"></i>
+                                <h3 class="text-xl font-semibold">Well Documented</h3>
+                                <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet ligula quis lectus rhoncus porttitor ac ut quam.</p>
+                            </div>
+                        </div>
+
+                        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 px-4 py-4 border-b border-gray-300 sm:border-r sm:last:border-r-0">
+                            <div class="text-center p-5 transition-transform ease-out duration-300 transform hover:-translate-y-2">
+                                <i class="far fa-copy text-gray-500 text-4xl mb-4"></i>
+                                <h3 class="text-xl font-semibold">Clean Code</h3>
+                                <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet ligula quis lectus rhoncus porttitor ac ut quam.</p>
+                            </div>
+                        </div>
+
+                        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 px-4 py-4 border-b border-gray-300 sm:border-r sm:last:border-r-0">
+                            <div class="text-center p-5 transition-transform ease-out duration-300 transform hover:-translate-y-2">
+                                <i class="fas fa-cogs text-gray-500 text-4xl mb-4"></i>
+                                <h3 class="text-xl font-semibold">Custom Support</h3>
+                                <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet ligula quis lectus rhoncus porttitor ac ut quam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- <--------------------------------------->
+
+
+
+
+            <section id="projects" class="pt-20 pb-48 bg-gray-900">
+                <div class="container mx-auto px-4">
+                    <!-- Header Section -->
+                    <div class="flex flex-wrap justify-center text-center mb-12">
+                        <div class="w-full lg:w-6/12 px-4">
+                            <!-- <h2 class="text-4xl font-semibold uppercase text-blue-400">My Project</h2> -->
+                            <h1 class="text-4xl font-semibold font-sans text-white">My <span class="text-yellow-600">Project</span></h1>
+                        </div>
+                    </div>
+
+                    <!-- Project Cards Wrapper with spacing adjustments -->
+                    <div class="flex flex-wrap justify-center gap-8">
+                        <!-- Card 1 -->
+                        <div class="w-full sm:w-6/12 md:w-4/12 lg:w-3/12 px-4" data-aos="flip-right">
+                            <div class="px-4 py-6 bg-gray-800 rounded-lg shadow-lg">
+                                <!-- Responsive Image -->
+                                <img alt="Project 1" src="pexels-juanpphotoandvideo-1246437.jpg" class="shadow-lg rounded mx-auto mb-4" style="max-width: 100%; height: auto;" />
+                                <div class="text-center">
+                                    <a href="index3.html" class="border border-yellow-300 hover:text-yellow-300 text-white font-semibold py-2 px-4 rounded inline-block mb-4">
+                                    Click Me!
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="w-full sm:w-6/12 md:w-4/12 lg:w-3/12 px-4" data-aos="flip-right">
+                            <div class="px-4 py-6 bg-gray-800 rounded-lg shadow-lg h-full">
+                                <!-- Responsive Image -->
+                                <img alt="Project 2" src="pngtree-d-image-of-sleek-black-drum-kit-with-elegant-gold-accents-image_3812714.jpg" class="shadow-lg rounded mx-auto mb-4" style="max-width: 100%; height: auto;" />
+                                <div class="text-center">
+                                    <a href="index4.html" class="border border-yellow-300 hover:text-yellow-300 text-white font-semibold py-2 px-4 rounded inline-block mb-4">
+                                    Click Me!
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="w-full sm:w-6/12 md:w-4/12 lg:w-3/12 px-4" data-aos="flip-right">
+                            <div class="px-4 py-6 bg-gray-800 rounded-lg shadow-lg h-full">
+                                <!-- Responsive Image -->
+                                <img alt="Project 3" src="3D-Carousel-Slider-1080x675.jpg" class="shadow-lg rounded mx-auto mb-4" style="max-width: 100%; height: auto;" />
+                                <div class="text-center">
+                                    <a href="index2.html" class="border border-yellow-300 hover:text-yellow-300 text-white font-semibold py-2 px-4 rounded inline-block mb-4">
+                                    Click Me!
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- contact---- -->
+            <section id="contact" class="pb-20 relative block bg-black text-white">
+                <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px; transform: translateZ(0px)">
+                    <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+                </div>
+                <div class="container mx-auto px-4 lg:pt-24 lg:pb-64 pb-20 pt-20">
+                    <div class="flex flex-wrap text-center justify-center">
+                        <div class="w-full lg:w-6/12 px-4">
+                            <h2 class="text-4xl font-semibold text-white uppercase">
+                                Contact Us
+                            </h2>
+                            <!-- <h1 class="text-yellow-600">Contact</h1> -->
+                            <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
+                                Contact us using the form below.Ask any questions. We're here to make your life just a little easier.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact form -->
+            <section id="contact_form" class="relative block py-24 lg:pt-0 bg-black">
+                <div class="container mx-auto px-4">
+                    <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+                        <div class="w-full lg:w-6/12 px-4">
+                            <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300" data-aos="fade-up-right">
+                                <div class="flex-auto p-5 lg:p-10 bg-gray-300 text-black">
+                                    <h4 class="text-2xl font-semibold text-black">
+                                        Want to work with us?
+                                    </h4>
+                                    <p class="leading-relaxed mt-1 mb-4">
+                                        Complete this form and we will get back to you in 24 hours.
+                                    </p>
+                                    <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                                        <div class="relative w-full mb-3 mt-8">
+                                            <label class="block uppercase text-xs font-bold mb-2" for="full-name">Full
+                                            Name</label>
+                                            <input type="text" id="full-name" name="name" class="px-3 py-3 placeholder-gray-400 bg-gray-700 rounded text-sm shadow focus:outline-none focus:shadow-outline w-full" placeholder="Full Name" required>
+                                        </div>
+                                        <div class="relative w-full mb-3">
+                                            <label class="block uppercase text-xs font-bold mb-2" for="email">Email</label>
+                                            <input type="email" id="email" name="_replyto" class="px-3 py-3 placeholder-gray-800 bg-gray-700 rounded text-sm shadow focus:outline-none focus:shadow-outline w-full" placeholder="Email" required>
+                                        </div>
+                                        <div class="relative w-full mb-3">
+                                            <label class="block uppercase text text-xs font-bold mb-2" for="message">Message</label>
+                                            <textarea id="message" name="message" rows="4" class="px-3 py-3 placeholder-gray-400 bg-gray-700 rounded text-sm shadow focus:outline-none focus:shadow-outline w-full" placeholder="Type a message..." required></textarea>
+                                        </div>
+                                        <div class="text-center mt-6">
+                                            <button type="submit" class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1">
+                                            Send Message
+                                        </button>
+                                        </div>
+                                    </form>
+                                    <!-- Success/Error Message Box -->
+                                    <div id="response-message" class="hidden mt-4 p-4 rounded text-center"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="relative bg-gray-300 pt-8 pb-6">
+            <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px; transform: translateZ(0px)">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+            </div>
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap">
+                    <div class="w-full lg:w-6/12 px-4">
+                        <h4 class="text-3xl font-semibold">Follow us on social media</h4>
+                        <h5 class="text-lg mt-0 mb-2 text-gray-700">
+                            Find us on any of these platforms, we respond 24 hours.
+                        </h5>
+                        <!-- <div class="mt-6">
+                        <button class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button">
+                            <i class="flex fab fa-facebook-square "></i></button>
+                        <button class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button">
+                            <a href="https://www.linkedin.com/in/aditya-kumar-a99030250"
+                                class="flex fab fa-linkedin"></a></button>
+                        <button class="bg-white text-pink-500 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button">
+                            <a href="https://www.instagram.com/aditya_singh_rajput10?igsh=bDR0M3Y4bzg2bjJm"
+                                class="flex fab fa-instagram"> </a>
+                        </button>
+                    </div> -->
+                        <div class="mt-6 flex space-x-3">
+                            <!-- Facebook Icon -->
+                            <a href="https://github.com/aditya-singh-6" target="_blank" class="bg-white text-black shadow-lg flex items-center justify-center h-10 w-10 rounded-full outline-none focus:outline-none">
+                                <i class="fab fa-github"></i>
+                            </a>
+
+                            <!-- LinkedIn Icon -->
+                            <a href="https://www.linkedin.com/in/aditya-kumar-a99030250" target="_blank" class="bg-white text-blue-400 shadow-lg flex items-center justify-center h-10 w-10 rounded-full outline-none focus:outline-none">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+
+                            <!-- Instagram Icon -->
+                            <a href="https://www.instagram.com/aditya_singh_rajput10?igsh=bDR0M3Y4bzg2bjJm" target="_blank" class="bg-white text-pink-500 shadow-lg flex items-center justify-center h-10 w-10 rounded-full outline-none focus:outline-none">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <hr class="my-6 border-gray-400" />
+                <div class="flex flex-wrap items-center md:justify-between justify-center">
+                    <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                        <div class="text-sm text-gray-600 font-semibold py-1">
+                            Copyright © 2024 My Portfolio
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- partial -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js'></script>
+        <script src="./script.js"></script>
+
+</body>
+
+</html>
